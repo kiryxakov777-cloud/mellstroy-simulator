@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mellstroy Simulator — скачать APK</title>
+<style>
+  :root {
+    --bg: #0b0018;
+    --panel: rgba(255, 255, 255, 0.04);
+    --accent: #9b4dff;
+    --accent2: #c77dff;
+    --text: #efe8ff;
+    --muted: #a89bc4;
+    --gold: #ffcf5c;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+    background: radial-gradient(1200px 600px at 50% -10%, #2a0a4d 0%, var(--bg) 60%);
+    color: var(--text);
+    min-height: 100vh;
+    line-height: 1.6;
+  }
+  .wrap { max-width: 1080px; margin: 0 auto; padding: 32px 20px 80px; }
+
+  header { text-align: center; padding: 40px 0 20px; }
+  .logo {
+    font-size: clamp(38px, 8vw, 76px);
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: linear-gradient(90deg, #ffffff, var(--accent2), var(--accent));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    line-height: 1.05;
+  }
+  .subtitle {
+    font-size: clamp(16px, 3vw, 24px);
+    color: var(--accent2);
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    margin-top: 6px;
+  }
+  .tagline { color: var(--muted); margin-top: 18px; font-size: 18px; }
+
+  .cta { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; margin: 28px 0 10px; }
+  .btn {
+    display: inline-flex; align-items: center; gap: 10px;
+    padding: 16px 34px;
+    border-radius: 16px;
+    text-decoration: none;
+    font-weight: 700;
+    font-size: 18px;
+    transition: transform .15s ease, box-shadow .15s ease;
+  }
+  .btn-primary {
+    background: linear-gradient(135deg, #7a1fff, #b44dff);
+    color: #fff;
+    box-shadow: 0 10px 30px rgba(150, 70, 255, .35);
+  }
+  .btn-primary:hover { transform: translateY(-2px); box-shadow: 0 14px 38px rgba(150, 70, 255, .5); }
+  .btn-ghost {
+    border: 2px solid rgba(180, 120, 255, .5);
+    color: var(--accent2);
+  }
+  .btn-ghost:hover { background: rgba(180, 120, 255, .08); }
+
+  .meta {
+    display: flex; gap: 22px; justify-content: center; flex-wrap: wrap;
+    color: var(--muted); font-size: 14px; margin-top: 18px;
+  }
+  .meta b { color: var(--text); }
+
+  section { margin-top: 56px; }
+  h2 { font-size: 26px; margin-bottom: 18px; color: var(--accent2); }
+
+  .card {
+    background: var(--panel);
+    border: 1px solid rgba(160, 110, 255, .18);
+    border-radius: 20px;
+    padding: 22px;
+  }
+  .grid { display: grid; gap: 16px; }
+  .grid-3 { grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+  .mode h3 { font-size: 19px; margin-bottom: 8px; }
+  .mode p { color: var(--muted); font-size: 15px; }
+  .badge {
+    display: inline-block; font-size: 12px; letter-spacing: 1px;
+    text-transform: uppercase; color: var(--gold);
+    border: 1px solid rgba(255, 207, 92, .35);
+    border-radius: 999px; padding: 2px 10px; margin-bottom: 10px;
+  }
+
+  .shots { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr)); }
+  .shots img {
+    width: 100%; border-radius: 18px; display: block;
+    border: 1px solid rgba(160, 110, 255, .25);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, .45);
+    transition: transform .2s ease;
+  }
+  .shots img:hover { transform: translateY(-4px); }
+
+  .skins { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(190px, 1fr)); }
+  .skin {
+    background: linear-gradient(180deg, rgba(120, 60, 200, .18), rgba(40, 10, 70, .35));
+    border: 1px solid rgba(160, 110, 255, .25);
+    border-radius: 16px; padding: 14px; text-align: center;
+  }
+  .skin b { display: block; font-size: 17px; }
+  .skin span { color: var(--gold); font-size: 15px; }
+
+  footer {
+    margin-top: 64px; text-align: center;
+    color: var(--muted); font-size: 14px;
+    border-top: 1px solid rgba(160, 110, 255, .15);
+    padding-top: 24px;
+  }
+  footer b { color: var(--accent2); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="logo">MELLSTROY</div>
+    <div class="subtitle">Simulator</div>
+    <p class="tagline">Вертолёты, копьё, песочница и неоновый фиолетовый мир — в одном мобильном приложении.</p>
+
+    <div class="cta">
+      <a class="btn btn-primary" href="https://github.com/kiryxakov777-cloud/mellstroy-simulator/releases/download/v1.0/MellstroySim.apk" download>⬇ Скачать APK</a>
+      <a class="btn btn-ghost" href="#modes">Что внутри</a>
+    </div>
+
+    <div class="meta">
+      <span>Версия: <b>1.0</b></span>
+      <span>Размер: <b>76 МБ</b></span>
+      <span>Платформа: <b>Android 7+</b></span>
+      <span>Архитектура: <b>arm64</b></span>
+    </div>
+  </header>
+
+  <section id="about">
+    <h2>Об игре</h2>
+    <div class="card">
+      <p>
+        <b>Mellstroy Simulator</b> — это аркадный сборник из трёх режимов с видом от третьего лица
+        и неоновой фиолетовой стилистикой. Управляй вертолётом на скорости, метай копьё по мишеням
+        на реалистичной улице и устраивай хаос в песочнице с оружием, гранатами и техникой.
+      </p>
+      <p style="margin-top:12px;color:var(--muted)">
+        Зарабатывай монеты, открывай скины персонажей и ставь личные рекорды.
+        Всё в одном приложении, без интернета и рекламы.
+      </p>
+    </div>
+  </section>
+
+  <section id="modes">
+    <h2>Три режима</h2>
+    <div class="grid grid-3">
+      <div class="card mode">
+        <div class="badge">Режим 1</div>
+        <h3>🚁 Вертолёт</h3>
+        <p>Лети через неоновые ворота, собирай монеты, ускоряйся. Промахнулся мимо ворот — крушение.</p>
+      </div>
+      <div class="card mode">
+        <div class="badge">Режим 2</div>
+        <h3>🎯 Копьё</h3>
+        <p>Улица, четыре мишени на разной дальности. Чем дальше цель — тем больше монет за попадание.</p>
+      </div>
+      <div class="card mode">
+        <div class="badge">Режим 3</div>
+        <h3>🌍 Песочница</h3>
+        <p>Большая карта, пистолет, автомат, гранаты, вертолёт и машина, боты с респавном.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="shots">
+    <h2>Скриншоты</h2>
+    <div class="shots">
+      <img src="img/shop.png" alt="Магазин скинов">
+      <img src="img/heli.png" alt="Режим вертолёт">
+      <img src="img/spear.png" alt="Режим копьё">
+      <img src="img/sandbox.png" alt="Песочница">
+    </div>
+  </section>
+
+  <section id="skins">
+    <h2>Скины</h2>
+    <div class="skins">
+      <div class="skin"><b>Новичок</b><span>бесплатно</span></div>
+      <div class="skin"><b>Блондин</b><span>◆ 1000</span></div>
+      <div class="skin"><b>Тёмный</b><span>◆ 1500</span></div>
+      <div class="skin"><b>Неон</b><span>◆ 2500</span></div>
+    </div>
+  </section>
+
+  <section id="install">
+    <h2>Установка</h2>
+    <div class="card">
+      <p>1. Скачай APK по кнопке выше.<br>
+         2. Разреши установку из неизвестных источников, если телефон попросит.<br>
+         3. Установи и запусти — игра работает офлайн.</p>
+      <p style="margin-top:12px;color:var(--muted)">
+        Это отладочная сборка (debug). Для публикации в Google Play нужна релизная подпись.
+      </p>
+    </div>
+  </section>
+
+  <footer>
+    Разработчик: <b>keryxxxx</b> · Mellstroy Simulator v1.0 · сделано на Godot 4
+  </footer>
+</div>
+</body>
+</html>
