@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="robots" content="noindex, nofollow, noarchive">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Silent Shift — хоррор для Android</title>
+<style>
+  :root { --bg:#07060a; --panel:rgba(255,255,255,.04); --accent:#8b1e2d; --accent2:#c94a5a; --text:#efe8e8; --muted:#a89a9a; }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { font-family:"Segoe UI",system-ui,sans-serif; background:radial-gradient(900px 500px at 50% -10%, #2a0c12 0%, var(--bg) 65%); color:var(--text); min-height:100vh; line-height:1.6; }
+  .wrap { max-width:960px; margin:0 auto; padding:32px 20px 80px; }
+  header { text-align:center; padding:40px 0 10px; }
+  .logo { font-size:clamp(34px,8vw,72px); font-weight:800; letter-spacing:4px; background:linear-gradient(90deg,#fff,#c94a5a,#8b1e2d); -webkit-background-clip:text; background-clip:text; color:transparent; }
+  .subtitle { color:var(--accent2); letter-spacing:8px; text-transform:uppercase; margin-top:4px; }
+  .tagline { color:var(--muted); margin-top:18px; font-size:18px; }
+  .cta { margin:26px 0 8px; }
+  .btn { display:inline-block; padding:16px 36px; border-radius:14px; text-decoration:none; font-weight:700; font-size:18px; background:linear-gradient(135deg,#7a1220,#c94a5a); color:#fff; box-shadow:0 10px 30px rgba(160,40,60,.35); }
+  .meta { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; color:var(--muted); font-size:14px; margin-top:16px; }
+  .meta b { color:var(--text); }
+  section { margin-top:44px; }
+  h2 { font-size:24px; margin-bottom:14px; color:var(--accent2); }
+  .card { background:var(--panel); border:1px solid rgba(200,80,90,.18); border-radius:18px; padding:22px; }
+  ul { margin-left:18px; color:var(--muted); }
+  ul li { margin:8px 0; }
+  ul b { color:var(--text); }
+  footer { margin-top:56px; text-align:center; color:var(--muted); font-size:14px; border-top:1px solid rgba(200,80,90,.15); padding-top:22px; }
+  .back { color:var(--accent2); text-decoration:none; font-size:15px; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <a class="back" href="../">← Mellstroy Simulator</a>
+    <div class="logo">SILENT SHIFT</div>
+    <div class="subtitle">Тихая смена</div>
+    <p class="tagline">Ты комендант общежития. Оно слышит каждый твой шаг.</p>
+
+    <div class="cta">
+      <a class="btn" href="https://github.com/kiryxakov777-cloud/mellstroy-simulator/releases/download/silentshift-v0.1/SilentShift.apk" download>⬇ Скачать APK</a>
+    </div>
+
+    <div class="meta">
+      <span>Версия: <b>0.1 (прототип)</b></span>
+      <span>Размер: <b>24 МБ</b></span>
+      <span>Android: <b>10+</b></span>
+      <span>Движок: <b>Unity 6</b></span>
+    </div>
+  </header>
+
+  <section>
+    <h2>Что внутри</h2>
+    <div class="card">
+      <ul>
+        <li><b>Хоррор от первого лица</b> — горизонтальный экран, управление двумя пальцами</li>
+        <li><b>Существо со слухом</b> — не видит тебя, но слышит шаги: бег выдаёт на 16 метров, присед — на 2.5</li>
+        <li><b>Фонарь с батареей</b> — садится за ~4 минуты, свет делает тебя заметнее</li>
+        <li><b>Три задачи</b> — включить щиток, забрать ключ, дойти до выхода</li>
+        <li><b>Укрытия</b> — шкафы, в которых можно переждать</li>
+        <li><b>Пространственный звук</b> — шаги и рык существа слышно на слух</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Управление</h2>
+    <div class="card">
+      <ul>
+        <li><b>Левый палец</b> — джойстик движения (низ-лево)</li>
+        <li><b>Правый палец</b> — обзор (свайп по правой части)</li>
+        <li><b>Кнопка «ДЕЙСТВИЕ»</b> — щиток, ключ, укрытие, выход</li>
+        <li><b>Кнопка «ФОНАРЬ»</b> — включить/выключить свет</li>
+      </ul>
+    </div>
+  </section>
+
+  <section>
+    <h2>Установка</h2>
+    <div class="card">
+      <p>1. Скачай APK на телефон.<br>
+         2. Разреши установку из неизвестных источников.<br>
+         3. Надень наушники. Выключи свет. Удачи.</p>
+    </div>
+  </section>
+
+  <footer>
+    Разработчик: <b>keryxxxx</b> · Silent Shift v0.1 · Unity 6 LTS · URP-совместимый пайплайн
+  </footer>
+</div>
+</body>
+</html>
